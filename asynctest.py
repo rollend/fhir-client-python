@@ -5,6 +5,7 @@ from fhirpy.base.searchset import Raw
 async def main():
     # Create an instance
     client = AsyncFHIRClient(
+        url='', extra_headers={"x-api-key":"", "Authorization":""}
     )
 
     # Search for patients
